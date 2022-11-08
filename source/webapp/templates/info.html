@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+{% csrf_token %}
+<h1><a href="{% url 'index' %}">Home Page</a></h1>
+    <h1>Information:</h1>
+    <p>Goal Title: {{ todo.goal }}</p>
+    <p>Description: {{ todo.content }}</p>
+    <h2>Started:</h2>
+    <p>Started: {{ todo.started }}</p>
+    <h2>Status:{{ todo.choice }}</h2>
+{% endblock %}
