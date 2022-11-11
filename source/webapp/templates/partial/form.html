@@ -1,10 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% csrf_token %}
+
+{% for error in form.non_field_errors %}
+   <p class="text-danger">{{ error }}</p>
+{% endfor %}
+
+
+{% for field in form %}
+   <p><label for="{{ field.id_for_label }}">{{ field.label }}</label></p>
+   {% for error in field.errors %}
+       <p class="form-error">{{ error }}</p>
+   {% endfor %}
+   <p>{{ field }}</p>
+{% endfor %}
+
+<p><input type="submit" value="{{ button_text }}"></p>
+
+
+
+{#{% for error in form.non_field_errors %}#}
+{#   <p class="text-danger">{{ error }}</p>#}
+{#{% endfor %}#}
+{##}
+{#<p><label for="{{ form.goal.id_for_label }}">{{ form.goal.label }}</label></p>#}
+{#{% for error in form.goal.errors %}#}
+{#   <p class="text-danger">{{ error }}</p>#}
+{#{% endfor %}#}
+{#<p>{{ form.goal }}</p>#}
+{##}
+{##}
+{#<p><label for="{{ form.choice.id_for_label }}">{{ form.choice.label }}</label></p>#}
+{#{% for error in form.choice.errors %}#}
+{#   <p class="text-danger">{{ error }}</p>#}
+{#{% endfor %}#}
+{#<p>{{ form.choice }}</p>#}
+{##}
+{#<p><label for="{{ form.content.id_for_label }}">{{ form.content.label }}</label></p>#}
+{#{% for error in form.content.errors %}#}
+{#   <p class="text-danger">{{ error }}</p>#}
+{#{% endfor %}#}
+{#<p>{{ form.content }}</p>#}
+{##}
+{#<p><label for="{{ form.deadline.id_for_label }}">{{ form.deadline.label }}</label></p>#}
+{#{% for error in form.deadline.errors %}#}
+{#   <p class="text-danger">{{ error }}</p>#}
+{#{% endfor %}#}
+{#<p>{{ form.deadline }}</p>#}
+
+
+
+
+
+
+
+
+
+
+
+
