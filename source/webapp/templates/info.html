@@ -1,11 +1,23 @@
 {% extends 'base.html' %}
+{% block menu %}
+    <li class="nav-item">
+      <a class="nav-link active" href="{% url 'add' %}">Create</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="{% url 'update' todo.pk %}">Update</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="{% url 'delete' todo.pk %}">Delete</a>
+    </li>
+{% endblock %}
 {% block content %}
 {% csrf_token %}
-<h1><a href="{% url 'index' %}">Home Page</a></h1>
-    <h1>Information:</h1>
-    <p>Goal Title: {{ todo.goal }}</p>
-    <p>Description: {{ todo.content }}</p>
-    <h2>Started:</h2>
-    <p>Started: {{ todo.started }}</p>
-    <h2>Status:{{ todo.choice }}</h2>
+    <h1>Information:</h1><br>
+    <p><b>Goal Title:</b> {{ todo.goal }}</p>
+    <p><b>Description:</b> {{ todo.content }}</p>
+    <p><b>Started:</b> {{ todo.started }}</p>
+    <p><b>Deadline:</b> {{ todo.deadline }}</p>
+    <p><b>Status:</b>{{ todo.choice }}</p>
+
 {% endblock %}
+

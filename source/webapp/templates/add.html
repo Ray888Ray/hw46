@@ -1,25 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Create To Do</h1>
+<h1>Create ToDo</h1>
 
 <form action="/todo/add/" method="post">
-    {% csrf_token %}
-
-    <label>Goal Title:</label><br/>
-    <input type="text" name="goal" required/><br/>
-
-    <select name="choice">
-        {% for v,s in choice %}
-            <option value="{{ v }}">{{ s }}</option>
-        {% endfor %}
-    </select><br/>
-
-
-    <label>Description:</label><br/>
-    <textarea name="content" ></textarea><br/>
-
-    <br/>
-    <input type="submit" value="Create"/>
+{% include 'partial/form.html'  with button_text='Create' %}
 </form>
-<h2><a href="{% url 'index' %}">Home Page</a></h2>
 {% endblock %}

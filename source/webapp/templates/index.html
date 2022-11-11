@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
+{% block menu %}
+<li class="nav-item">
+  <a class="nav-link active" href="{% url 'add' %}">Create</a>
+</li>
+{% endblock %}
+
 {% block content %}
-    <h1>ToDo List</h1>
-{% for todo in todos %}
-<h2>{{ todo.goal }}</h2>
-<p>{{ todo.choice }}</p><br/>
-Started:{{ todo.started}}
-</br>
-<h3><a href="{% url 'info' todo.pk %}">More...</a></h3>
-{% endfor %}
-<h3><a href="{% url 'add' %}">Create new Goals</a></h3>
+    <h1 class="text-center" >ToDo List</h1><br/><hr>
+    {% for todo in todos %}
+        <h2>{{ todo.goal }}</h2>
+        <p>{{ todo.choice }}</p>
+        <h3><a href="{% url 'info' todo.pk %}">More...</a></h3><br/>
+        <hr>
+    {% endfor %}
 {% endblock %}
