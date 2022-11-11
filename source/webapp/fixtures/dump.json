@@ -3,118 +3,22 @@
   "model": "webapp.todo",
   "pk": 1,
   "fields": {
-    "goal": "Title",
-    "content": "Some long informative text",
-    "started": "2022-11-04T09:08:47.702Z",
+    "goal": "rrfrrfrff",
+    "content": "rfrrrfrfr",
+    "started": "2022-11-11",
+    "deadline": null,
     "choice": "new"
   }
 },
 {
   "model": "webapp.todo",
-  "pk": 3,
+  "pk": 2,
   "fields": {
-    "goal": "Title2",
-    "content": "Some long informative text2",
-    "started": "2022-11-04T09:19:59.860Z",
+    "goal": "Title1",
+    "content": "asddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddcasdc",
+    "started": "2022-11-11",
+    "deadline": "2025-06-16",
     "choice": "new"
-  }
-},
-{
-  "model": "webapp.todo",
-  "pk": 5,
-  "fields": {
-    "goal": "4654",
-    "content": "43534534",
-    "started": "2022-11-04T10:19:42.618Z",
-    "choice": "new"
-  }
-},
-{
-  "model": "webapp.todo",
-  "pk": 9,
-  "fields": {
-    "goal": "title1",
-    "content": "3412",
-    "started": "2022-11-04T14:10:26.737Z",
-    "choice": "in_progress"
-  }
-},
-{
-  "model": "webapp.todo",
-  "pk": 13,
-  "fields": {
-    "goal": "Title3",
-    "content": "title3-content ",
-    "started": "2022-11-08T06:37:00.232Z",
-    "choice": "new"
-  }
-},
-{
-  "model": "webapp.todo",
-  "pk": 14,
-  "fields": {
-    "goal": "Title4",
-    "content": "content-title4",
-    "started": "2022-11-08T08:17:17.036Z",
-    "choice": "done"
-  }
-},
-{
-  "model": "webapp.todo",
-  "pk": 15,
-  "fields": {
-    "goal": "Title5",
-    "content": "Title5- content ",
-    "started": "2022-11-08T08:43:04.007Z",
-    "choice": "in_progress"
-  }
-},
-{
-  "model": "webapp.todo",
-  "pk": 16,
-  "fields": {
-    "goal": "Title5",
-    "content": "Title5- content ",
-    "started": "2022-11-08T08:45:20.444Z",
-    "choice": "in_progress"
-  }
-},
-{
-  "model": "webapp.todo",
-  "pk": 17,
-  "fields": {
-    "goal": "Title 6",
-    "content": "",
-    "started": "2022-11-08T11:41:56.045Z",
-    "choice": "new"
-  }
-},
-{
-  "model": "webapp.todo",
-  "pk": 18,
-  "fields": {
-    "goal": "Title888",
-    "content": "Content of title 888",
-    "started": "2022-11-08T11:47:24.420Z",
-    "choice": "new"
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 1,
-  "fields": {
-    "password": "pbkdf2_sha256$390000$jjd9wEdvE6uWgnQBRDAPEK$NzxTSNsnTVRpYlid+1KJKkecL3j8JxUv14JqUlY7PKk=",
-    "last_login": "2022-11-08T06:32:09.195Z",
-    "is_superuser": true,
-    "username": "admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2022-11-04T09:23:36.302Z",
-    "groups": [],
-    "user_permissions": []
   }
 }
 ]
